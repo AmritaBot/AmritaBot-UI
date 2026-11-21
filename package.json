@@ -1,5 +1,5 @@
 {
-  "name": "@amrita/ui",
+  "name": "@amrita-constant/ui",
   "version": "0.1.0",
   "description": "AmritaBot 与插件共用的 UI 组件包（shadcn 风格原子组件 + 业务通用件）",
   "license": "MIT",
