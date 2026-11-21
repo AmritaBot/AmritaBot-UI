@@ -1,0 +1,62 @@
+/**
+ * 组件名清单。
+ *
+ * 宿主把它挂在 window.__AMRITA_HOST__.UI 旁边，插件构建套件据此生成
+ * "从宿主取组件"的再导出模块；增删组件时改这里，宿主与插件同时生效。
+ */
+
+export const UI_EXPORTS = [
+  "Badge",
+  "badgeVariants",
+  "Button",
+  "buttonVariants",
+  "Card",
+  "CardAction",
+  "CardContent",
+  "CardDescription",
+  "CardFooter",
+  "CardHeader",
+  "CardTitle",
+  "Dialog",
+  "DialogTrigger",
+  "DialogClose",
+  "DialogContent",
+  "DialogHeader",
+  "DialogFooter",
+  "DialogTitle",
+  "DialogDescription",
+  "Input",
+  "Label",
+  "Select",
+  "SelectContent",
+  "SelectGroup",
+  "SelectItem",
+  "SelectLabel",
+  "SelectScrollDownButton",
+  "SelectScrollUpButton",
+  "SelectSeparator",
+  "SelectTrigger",
+  "SelectValue",
+  "Separator",
+  "Skeleton",
+  "Toaster",
+  "Switch",
+  "Table",
+  "TableHeader",
+  "TableBody",
+  "TableHead",
+  "TableRow",
+  "TableCell",
+  "Tabs",
+  "TabsList",
+  "TabsTrigger",
+  "TabsContent",
+  "Textarea",
+  "DataTable",
+  "StatusBadge",
+  "StatCard",
+  "ConfirmDialog",
+  "cn",
+] as const;
+
+export type UiExportName = (typeof UI_EXPORTS)[number];
