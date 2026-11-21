@@ -11,7 +11,8 @@
   "types": "./src/index.ts",
   "files": [
     "src",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "sideEffects": false,
   "peerDependencies": {
@@ -48,6 +49,30 @@
     "typescript": "^5"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run typecheck"
+  },
+  "author": "AmritaBot",
+  "homepage": "https://github.com/AmritaBot/AmritaBot-UI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmritaBot/AmritaBot-UI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AmritaBot/AmritaBot-UI/issues"
+  },
+  "keywords": [
+    "amrita",
+    "amritabot",
+    "ui",
+    "shadcn",
+    "react",
+    "tailwind"
+  ],
+  "engines": {
+    "bun": ">=1.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

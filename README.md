@@ -36,3 +36,7 @@ import { Button, Card, cn } from "@amrita/ui";
 bun install
 bun run typecheck
 ```
+
+## 发布
+
+推 tag 并在 GitHub 创建 release 后，工作流会跑 typecheck 并执行 `npm publish --access public`，需要仓库 secrets 里有 `NPM_TOKEN`。发布前记得同步 bump `version`，并提醒宿主侧对齐 `HOST_CONTRACT_VERSION`。
