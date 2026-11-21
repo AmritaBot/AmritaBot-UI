@@ -37,6 +37,7 @@ bun install
 bun run typecheck
 ```
 
-## 发布
+## 版本与发布
 
-推 tag 并在 GitHub 创建 release 后，工作流会跑 typecheck 并执行 `npm publish --access public`，需要仓库 secrets 里有 `NPM_TOKEN`。发布前记得同步 bump `version`，并提醒宿主侧对齐 `HOST_CONTRACT_VERSION`。
+本包随 AmritaBot 的发版节奏发布。发布步骤与契约约定由维护者执行，
+记录在 AmritaBot 仓库的 `FOR_MEMBERS.md`。
