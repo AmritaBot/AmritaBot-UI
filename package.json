@@ -1,6 +1,6 @@
 {
   "name": "@amrita-constant/ambot-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AmritaBot 与插件共用的 UI 组件包（shadcn 风格原子组件 + 业务通用件）",
   "license": "MIT",
   "type": "module",

@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write # npm provenance 需要
+  id-token: write # trusted publisher 与 provenance 都依赖 OIDC
 
 jobs:
   publish:
@@ -31,7 +31,8 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org
 
+      - name: Upgrade npm
+        run: npm install -g npm@^11.5.0 # trusted publishing 需要 npm 11.5+
+
       - name: Publish
         run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
