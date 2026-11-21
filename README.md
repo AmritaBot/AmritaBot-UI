@@ -12,10 +12,10 @@ AmritaBot WebUI 与插件共用的 UI 组件包。宿主前端、`@amrita/webui-
 
 ## 使用
 
-AmritaBot 以 git submodule 方式挂在 `frontend/packages/ui`，前端通过 `@amrita-constant/ui` 引入：
+AmritaBot 以 git submodule 方式挂在 `frontend/packages/ui`，前端通过 `@amrita-constant/ambot-ui` 引入：
 
 ```tsx
-import { Button, Card, cn } from "@amrita-constant/ui";
+import { Button, Card, cn } from "@amrita-constant/ambot-ui";
 ```
 
 插件侧不直接打包这些组件。插件用 `@amrita/webui-plugin-kit/ui` 的导入写法，构建时会被换成从 `window.__AMRITA_HOST__.UI` 取值的再导出模块，因此插件产物里不会出现第二份组件实现。
